@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+  background: url("bgimg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 5%;
+}
+.card {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  padding: 60px 0 20px 0;  
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.user-img {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%);
+}
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+h2 {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #1aa3ff;
+  width: 100%;
+}
+form {
+  padding: 20px 40px 0 40px;  
+}
+p {
+  position: absolute;
+  color: #bbb;
+  padding: 10px 0;
+  pointer-events: none;
+  display: none;
+}
+input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+::placeholder {
+  color: #bbb;
+}
+input[type=text], input[type=password], input[type=email], input[type=date] {
+  border: none;
+  border-bottom: solid 1px #fff;
+  background: transparent;
+  height: 40px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bolder;
+}
+button {
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  background-color: #1aa3ff;
+  height: 40px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+button:hover, button:focus {
+  cursor: pointer;
+  background-color: #0066ff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+input[type='date'] {
+  color: #bbb;
+  font-weight: 100;
+}
+.block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.block > div:first-child {
+  flex-grow: 1;
+  margin-right: 16px;
+}
+.block > div:last-child {
+  flex-grow: 1;
+}
